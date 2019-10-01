@@ -31,7 +31,7 @@ RSpec.describe "Well-Formed HTML Document" do
   end
 
   context 'within <head>' do
-    it 'contains a <link> tag to an external stylesheet' do
+    xit 'contains a <link> tag to an external stylesheet' do
       link = parsed_html.search('html > head > link').first
       expect(link).to_not be_nil, "No <link> tag found in the <head>"
       expect(link.attributes["href"]).to_not be_nil, "The 'href' attribute is missing in the link tag"
