@@ -26,7 +26,7 @@ RSpec.describe "Well-Formed HTML Document" do
     expect(results.errors).to be_empty, error_messages
   end
 
-  it 'has a language attribute in the <html> tag' do
+  xit 'has a language attribute in the <html> tag' do
     expect(html_file_contents).to include('<html lang="en">'), 'Include a lang attribute assigned to "en" for English'
   end
 
